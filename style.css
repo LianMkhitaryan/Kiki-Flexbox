@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-direction: row;
 }
 .card {
     position: relative;
@@ -22,4 +23,9 @@ body {
 .last {
     background-image: url('assets/cats.jpeg');
     background-size: cover;
+}
+@media  (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
 }
